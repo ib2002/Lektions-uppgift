@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Labb Test</title>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      /* Ändrar bakgrundsfärgen */
+  body {font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(59, 61, 170);
+  
+  }
+* {box-sizing: border-box;}
+
+/* Stylear själva input typen "text" */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Stylear "skicka" knappen */
+input[type=skicka] {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Får "skicka" knappen att ändra färg när man kommer åt den */
+input[type=skicka]:hover {
+  background-color: #45a049;
+}
+
+/* Stylear formuläret */
+.container {
+  border-radius: 5px;
+  background-color: hsl(61, 64%, 46%);
+  padding: 20px;
+}
+</style>
+    </head>
+
+    <body>
+        
+          
+          <nav class="navbar navbar-expand-sm bg-dark navbar-warning">
+            <a class="navbar-brand" href="index.html">Test</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="blabla.html"> Hem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blabla.html">Om oss</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blabla.html">Kontakta oss</a>
+                </li>    
+              </ul>
+            </div>  
+        </nav>
+        <div style="text-align: center">
+            <h3>Kontakta oss</h3>
+        </div>
+
+<div class="container">
+    
+
+  <form action="/action_page.php">
+    <label for="namn">Namn</label>
+    <input type="text" id="namn" name="namn" placeholder="Ditt namn..">
+
+    <label for="adress">Adress</label>
+    <input type="text" id="adress" name="adress" placeholder="Din adress..">
+
+    <label for="epost">Epost</label>
+    <input type="text" id="epost" name="epost" placeholder="Din email..">
+
+    <label for="mobilnummer">Mobilnummer</label>
+    <input type="text" id="mobilnummer" name="mobilnummer" placeholder="Ditt mobilnummer..">
+
+    
+    
+    <label for="ämne">Ämne</label>
+    <textarea id="ämne" name="ämne" placeholder="Skriv något.." style="height:200px"></textarea>
+
+    <input type="skicka" value="Skicka">
+  </form>
+</div>
+    </body>
+</html>
+
+          
